@@ -1,0 +1,10 @@
+<p>
+	HTML content toast example
+</p>
+<p-toast position="top-center">
+	<ng-template let-message pTemplate="message">
+		<div innerHtml="{{htmlContent}}">
+		</div>
+	</ng-template>
+</p-toast>
+<button type="button" pButton (click)="showHtmlContent()" label="Toast html content Example" class="ui-button-success"></button>
